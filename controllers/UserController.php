@@ -10,9 +10,14 @@ class UserController extends BaseController
     public function readUser()
     {
         $model = new UserModel();
-        $model->email = 'pbisevac@singidunum.ac.rs';
-        $model->firstName = 'Nikola';
-        $model->lastName = 'Bisevac';
+        $result = $model->get();
+        $model->mapData($result);
+        echo "<pre>";
+        var_dump($model);
+        exit;
+
+//        $modelP = new ProductModel();
+//        $modelP->get();
 
         $this->view->render('getUser', 'main', $model);
     }
