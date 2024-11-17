@@ -16,8 +16,8 @@
                 </thead>
                 <tbody>
                 <?php
-                foreach ($params as $user)
-                {
+
+                foreach ($params as $user) {
                     echo "<tr>";
                     echo "<td>";
                     echo "<div class='d-flex px-2 py-1'>";
