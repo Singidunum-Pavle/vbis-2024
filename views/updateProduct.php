@@ -25,12 +25,9 @@ use app\models\UserModel;
                         <input class="form-control" type="text" name="name" value="<?php echo $params->name ?>"
                                onfocus="focused(this)" onfocusout="defocused(this)">
                         <?php
-                        if ($params != null && $params->errors != null)
-                        {
-                            foreach ($params->errors as $attribute => $error)
-                            {
-                                if ($attribute == 'name')
-                                {
+                        if ($params != null && $params->errors != null) {
+                            foreach ($params->errors as $attribute => $error) {
+                                if ($attribute == 'name') {
                                     echo "<span class='text-danger'>$error[0]</span>";
                                 }
                             }
@@ -45,12 +42,9 @@ use app\models\UserModel;
                         <input class="form-control" type="text" name="description" value="<?php echo $params->description ?>"
                                onfocus="focused(this)" onfocusout="defocused(this)">
                         <?php
-                        if ($params != null && $params->errors != null)
-                        {
-                            foreach ($params->errors as $attribute => $error)
-                            {
-                                if ($attribute == 'description')
-                                {
+                        if ($params != null && $params->errors != null) {
+                            foreach ($params->errors as $attribute => $error) {
+                                if ($attribute == 'description') {
                                     echo "<span class='text-danger'>$error[0]</span>";
                                 }
                             }

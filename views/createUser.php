@@ -26,12 +26,9 @@ use app\models\UserModel;
                                onfocus="focused(this)"
                                onfocusout="defocused(this)">
                         <?php
-                        if ($params != null && $params->errors != null)
-                        {
-                            foreach ($params->errors as $attribute => $error)
-                            {
-                                if ($attribute == 'email')
-                                {
+                        if ($params != null && $params->errors != null) {
+                            foreach ($params->errors as $attribute => $error) {
+                                if ($attribute == 'email') {
                                     echo "<span class='text-danger'>$error[0]</span>";
                                 }
                             }
@@ -47,12 +44,9 @@ use app\models\UserModel;
                                onfocusout="defocused(this)">
 
                         <?php
-                        if ($params != null && $params->errors != null)
-                        {
-                            foreach ($params->errors as $attribute => $error)
-                            {
-                                if ($attribute == 'first_name')
-                                {
+                        if ($params != null && $params->errors != null) {
+                            foreach ($params->errors as $attribute => $error) {
+                                if ($attribute == 'first_name') {
                                     echo "<span class='text-danger'>$error[0]</span>";
                                 }
                             }
@@ -67,12 +61,9 @@ use app\models\UserModel;
                                value="<?php echo $params->last_name ?>" onfocus="focused(this)"
                                onfocusout="defocused(this)">
                         <?php
-                        if ($params != null && $params->errors != null)
-                        {
-                            foreach ($params->errors as $attribute => $error)
-                            {
-                                if ($attribute == 'last_name')
-                                {
+                        if ($params != null && $params->errors != null) {
+                            foreach ($params->errors as $attribute => $error) {
+                                if ($attribute == 'last_name') {
                                     echo "<span class='text-danger'>$error[0]</span>";
                                 }
                             }
